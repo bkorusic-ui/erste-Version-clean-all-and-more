@@ -31,15 +31,26 @@ function ScrollHandler() {
   const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    if (hash) {
-      setTimeout(() => {
-        const element = document.querySelector(hash);
-        element?.scrollIntoView({ behavior: "smooth", block: "start" });
-      }, 100);
-    } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  }, [pathname, hash]);
+  if (hash) {
+    const timer = setTimeout(() => {
+      const element = document.querySelector(hash);
+
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 150);
+
+    return () => clearTimeout(timer);
+  }
+
+  window.scrollTo({
+    top: 0,
+    left: 0,
+  });
+}, [pathname, hash]);
 
   return null;
 }
