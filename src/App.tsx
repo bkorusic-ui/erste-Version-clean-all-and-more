@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -26,9 +27,27 @@ function Home() {
   );
 }
 
+function ScrollHandler() {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        element?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100);
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [pathname, hash]);
+
+  return null;
+}
+
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollHandler />
       <Header />
 
       <Routes>
