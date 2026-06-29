@@ -65,7 +65,7 @@ export default function Hero() {
 
         <motion.div variants={fadeImage} initial="hidden" animate="visible">
           <img
-            src="/hero.jpg.png"
+            src="/hero-gartenpflege-stuttgart.png"
             alt="Gartenpflege"
             className="h-[280px] w-full rounded-[26px] object-cover shadow-2xl shadow-black/10 transition duration-700 hover:scale-[1.02] sm:h-[320px] md:h-[520px] md:rounded-[32px]"
           />

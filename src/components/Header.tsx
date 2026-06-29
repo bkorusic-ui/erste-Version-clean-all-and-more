@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { Menu, X, Phone, } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Menu, X, Phone } from "lucide-react";
+
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -7,13 +9,13 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-[#e5dfd3]/80 bg-[#f8f6ef]/90 backdrop-blur-2xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 md:h-24 md:px-8">
-        <a href="/" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img
             src="/public:logo.png"
             alt="Clean all and more"
             className="h-14 w-auto md:h-20"
           />
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-11 text-[17px] font-medium text-[#4d594d] md:flex">
           <div className="group relative">
@@ -22,20 +24,19 @@ export default function Header() {
               className="transition hover:text-[#789873]"
             >
               Leistungen
-              
             </a>
 
             <div className="invisible absolute left-[-20px] top-full z-50 mt-7 flex flex-col gap-2 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100">
               <a
                 href="#hausmeisterservice"
-                className="block rounded-xl px-4 py-3 text-[15px] text-[#4d594d] transition hover:bg-[#eef3ea] hover:text-[#789873]"
+                className="block px-4 py-2 text-[15px] text-[#4d594d] transition hover:text-[#789873]"
               >
                 Hausmeisterservice
               </a>
 
               <a
                 href="#gartenpflege"
-                className="block rounded-xl px-4 py-3 text-[15px] text-[#4d594d] transition hover:bg-[#eef3ea] hover:text-[#789873]"
+                className="block px-4 py-2 text-[15px] text-[#4d594d] transition hover:text-[#789873]"
               >
                 Gartenpflege
               </a>
@@ -54,9 +55,9 @@ export default function Header() {
             Kontakt
           </a>
 
-          <a href="/referenzen" className="transition hover:text-[#789873]">
-            Referenzen
-          </a>
+          <Link to="/referenzen" className="transition hover:text-[#789873]">
+           Referenzen
+          </Link>
         </nav>
 
         <a
@@ -104,9 +105,9 @@ export default function Header() {
               Kontakt
             </a>
 
-            <a href="/referenzen" onClick={() => setOpen(false)}>
+            <Link to="/referenzen" onClick={() => setOpen(false)}>
               Referenzen
-            </a>
+            </Link>
           </nav>
 
           <a

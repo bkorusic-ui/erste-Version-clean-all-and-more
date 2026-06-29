@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Footer() {
   const year = new Date().getFullYear();
 
@@ -20,13 +21,13 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-3 text-[15px] text-[#556055] md:flex-row md:items-center md:gap-8">
-            <a href="/impressum" className="transition hover:text-[#789873]">
+            <Link to="/impressum" className="transition hover:text-[#789873]">
               Impressum
-            </a>
+            </Link> 
 
-            <a href="/datenschutz" className="transition hover:text-[#789873]">
+            <Link to="/datenschutz" className="transition hover:text-[#789873]">
               Datenschutz
-            </a>
+            </Link>
 
             <a href="#kontakt" className="transition hover:text-[#789873]">
               Kontakt
