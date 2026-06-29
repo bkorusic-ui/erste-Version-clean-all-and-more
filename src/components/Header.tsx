@@ -1,9 +1,22 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
+
+
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+
+const goToSection = (id: string) => {
+  setOpen(false);
+
+  navigate("/", {
+    state: {
+      scrollTo: id,
+    },
+  });
+};
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#e5dfd3]/80 bg-[#f8f6ef]/90 backdrop-blur-2xl">
@@ -11,7 +24,7 @@ export default function Header() {
 
         <Link to="/" className="flex items-center">
           <img
-            src="/logo.png"
+            src="/public:logo.png"
             alt="Clean All and More"
             className="h-14 w-auto md:h-20"
           />
@@ -19,9 +32,12 @@ export default function Header() {
 
         <nav className="hidden items-center gap-11 text-[17px] font-medium text-[#4d594d] md:flex">
           <div className="group relative">
-            <a href="/#leistungen" className="transition hover:text-[#789873]">
+            <button
+              onClick={() => goToSection("leistungen")}
+              className="transition hover:text-[#789873]"
+            >
               Leistungen
-            </a>
+            </button>
 
             <div className="invisible absolute left-[-20px] top-full z-50 mt-7 flex flex-col gap-2 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100">
               <a
@@ -40,17 +56,26 @@ export default function Header() {
             </div>
           </div>
 
-          <a href="/#ueber-uns" className="transition hover:text-[#789873]">
-            Über uns
-          </a>
+            <button
+              onClick={() => goToSection("ueber-uns")}
+                className="transition hover:text-[#789873]"
+              >
+                Über uns
+            </button>
 
-          <a href="/#ablauf" className="transition hover:text-[#789873]">
-            Ablauf
-          </a>
+          <button
+              onClick={() => goToSection("ablauf")}
+              className="transition hover:text-[#789873]"
+            >
+              Ablauf
+            </button>
 
-          <a href="/#kontakt" className="transition hover:text-[#789873]">
-            Kontakt
-          </a>
+            <button
+              onClick={() => goToSection("kontakt")}
+              className="transition hover:text-[#789873]"
+            >
+              Kontakt
+            </button>
 
           <Link to="/referenzen" className="transition hover:text-[#789873]">
             Referenzen

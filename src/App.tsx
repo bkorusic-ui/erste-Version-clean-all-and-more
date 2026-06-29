@@ -1,5 +1,10 @@
 import { useEffect } from "react";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -28,29 +33,54 @@ function Home() {
 }
 
 function ScrollHandler() {
-  const { pathname, hash } = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
-  if (hash) {
-    const timer = setTimeout(() => {
-      const element = document.querySelector(hash);
+    const smoothScrollTo = (targetY: number, duration = 1300) => {
+      const startY = window.scrollY;
+      const distance = targetY - startY;
+      const startTime = performance.now();
 
-      if (element) {
-        element.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-    }, 150);
+      const easeOutQuart = (t: number) => 1 - Math.pow(1 - t, 4);
 
-    return () => clearTimeout(timer);
-  }
+      const animate = (currentTime: number) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = easeOutQuart(progress);
 
-  window.scrollTo({
-    top: 0,
-    left: 0,
-  });
-}, [pathname, hash]);
+        window.scrollTo(0, startY + distance * eased);
+
+        if (progress < 1) {
+          requestAnimationFrame(animate);
+        }
+      };
+
+      requestAnimationFrame(animate);
+    };
+
+    const state = location.state as { scrollTo?: string } | null;
+
+    if (state?.scrollTo) {
+      const timer = setTimeout(() => {
+        const element = document.getElementById(state.scrollTo!);
+
+        if (element) {
+          const headerOffset = 120;
+          const targetY =
+            element.getBoundingClientRect().top +
+            window.scrollY -
+            headerOffset;
+
+          smoothScrollTo(targetY, 1600);
+          window.history.replaceState({}, "");
+        }
+      }, 250);
+
+      return () => clearTimeout(timer);
+    }
+
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return null;
 }

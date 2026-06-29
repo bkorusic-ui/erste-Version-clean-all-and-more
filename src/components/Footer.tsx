@@ -23,7 +23,7 @@ export default function Footer() {
           <div className="flex flex-col gap-3 text-[15px] text-[#556055] md:flex-row md:items-center md:gap-8">
             <Link to="/impressum" className="transition hover:text-[#789873]">
               Impressum
-            </Link> 
+            </Link>   
 
             <Link to="/datenschutz" className="transition hover:text-[#789873]">
               Datenschutz
