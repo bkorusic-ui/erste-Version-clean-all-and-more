@@ -2,13 +2,12 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 
-
-
 export default function Header() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
+  
 
-const goToSection = (id: string) => {
+  const goToSection = (id: string) => {
   setOpen(false);
 
   navigate("/", {
@@ -21,7 +20,6 @@ const goToSection = (id: string) => {
   return (
     <header className="sticky top-0 z-50 border-b border-[#e5dfd3]/80 bg-[#f8f6ef]/90 backdrop-blur-2xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 md:h-24 md:px-8">
-
         <Link to="/" className="flex items-center">
           <img
             src="/public:logo.png"
@@ -32,50 +30,32 @@ const goToSection = (id: string) => {
 
         <nav className="hidden items-center gap-11 text-[17px] font-medium text-[#4d594d] md:flex">
           <div className="group relative">
-            <button
-              onClick={() => goToSection("leistungen")}
-              className="transition hover:text-[#789873]"
-            >
+            <button onClick={() => goToSection("leistungen")} className="transition hover:text-[#789873]">
               Leistungen
             </button>
 
             <div className="invisible absolute left-[-20px] top-full z-50 mt-7 flex flex-col gap-2 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100">
-              <a
-                href="/#hausmeisterservice"
-                className="block px-4 py-2 text-[15px] text-[#4d594d] transition hover:text-[#789873]"
-              >
+              <button onClick={() => goToSection("hausmeisterservice")} className="block px-4 py-2 text-left text-[15px] text-[#4d594d] transition hover:text-[#789873]">
                 Hausmeisterservice
-              </a>
+              </button>
 
-              <a
-                href="/#gartenpflege"
-                className="block px-4 py-2 text-[15px] text-[#4d594d] transition hover:text-[#789873]"
-              >
+              <button onClick={() => goToSection("gartenpflege")} className="block px-4 py-2 text-left text-[15px] text-[#4d594d] transition hover:text-[#789873]">
                 Gartenpflege
-              </a>
+              </button>
             </div>
           </div>
 
-            <button
-              onClick={() => goToSection("ueber-uns")}
-                className="transition hover:text-[#789873]"
-              >
-                Über uns
-            </button>
+          <button onClick={() => goToSection("ueber-uns")} className="transition hover:text-[#789873]">
+            Über uns
+          </button>
 
-          <button
-              onClick={() => goToSection("ablauf")}
-              className="transition hover:text-[#789873]"
-            >
-              Ablauf
-            </button>
+          <button onClick={() => goToSection("ablauf")} className="transition hover:text-[#789873]">
+            Ablauf
+          </button>
 
-            <button
-              onClick={() => goToSection("kontakt")}
-              className="transition hover:text-[#789873]"
-            >
-              Kontakt
-            </button>
+          <button onClick={() => goToSection("kontakt")} className="transition hover:text-[#789873]">
+            Kontakt
+          </button>
 
           <Link to="/referenzen" className="transition hover:text-[#789873]">
             Referenzen
@@ -101,38 +81,31 @@ const goToSection = (id: string) => {
       {open && (
         <div className="border-t border-[#e5dfd3] bg-[#f8f6ef] px-5 py-6 md:hidden">
           <nav className="flex flex-col gap-5 text-[18px] font-medium text-[#4d594d]">
-
-            <a href="/#leistungen" onClick={() => setOpen(false)}>
+            <button onClick={() => goToSection("leistungen")} className="text-left">
               Leistungen
-            </a>
+            </button>
 
             <div className="ml-4 flex flex-col gap-3 border-l border-[#d8d2c4] pl-4 text-[16px] text-[#6b756b]">
-              <a
-                href="/#hausmeisterservice"
-                onClick={() => setOpen(false)}
-              >
+              <button onClick={() => goToSection("hausmeisterservice")} className="text-left">
                 Hausmeisterservice
-              </a>
+              </button>
 
-              <a
-                href="/#gartenpflege"
-                onClick={() => setOpen(false)}
-              >
+              <button onClick={() => goToSection("gartenpflege")} className="text-left">
                 Gartenpflege
-              </a>
+              </button>
             </div>
 
-            <a href="/#ueber-uns" onClick={() => setOpen(false)}>
+            <button onClick={() => goToSection("ueber-uns")} className="text-left">
               Über uns
-            </a>
+            </button>
 
-            <a href="/#ablauf" onClick={() => setOpen(false)}>
+            <button onClick={() => goToSection("ablauf")} className="text-left">
               Ablauf
-            </a>
+            </button>
 
-            <a href="/#kontakt" onClick={() => setOpen(false)}>
+            <button onClick={() => goToSection("kontakt")} className="text-left">
               Kontakt
-            </a>
+            </button>
 
             <Link to="/referenzen" onClick={() => setOpen(false)}>
               Referenzen

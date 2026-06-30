@@ -65,7 +65,20 @@ function ScrollHandler() {
         const element = document.getElementById(state.scrollTo!);
 
         if (element) {
-          const headerOffset = state.scrollTo === "gartenpflege" ? 90 : 120;
+         let headerOffset = 120;
+
+          switch (state.scrollTo) {
+            case "hausmeisterservice":
+              headerOffset = 75;
+              break;
+
+            case "gartenpflege":
+              headerOffset = 100;
+              break;
+
+            default:
+              headerOffset = 120;
+          }
           const targetY =
             element.getBoundingClientRect().top +
             window.scrollY -

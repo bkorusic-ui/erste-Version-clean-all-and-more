@@ -159,7 +159,10 @@
               viewport={{ once: true, amount: 0.35 }}
             >
               <p className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-[#789873]">
-                Hausmeisterservice
+                <h3
+                  id="hausmeisterservice"
+                  className="text-[28px] font-semibold leading-tight tracking-[-0.035em] text-[#111a13] md:text-[36px]"
+                ></h3>
               </p>
               
 
