@@ -109,7 +109,7 @@ export default function About() {
           <div className="absolute -inset-4 rounded-[34px] bg-[#789873]/10 blur-2xl md:-inset-5" />
 
           <img
-            src="/about-clean-all-and-more.jpg"
+            src="/about.jpg"
             alt="Clean All & More bei der Objekt- und Gartenpflege in Stuttgart"
             className="relative h-[340px] w-full rounded-[26px] border border-[#d9d2c5] object-cover shadow-xl shadow-black/10 md:h-[560px] md:rounded-[32px]"
           />

@@ -24,9 +24,18 @@ const fadeImage: Variants = {
 };
 
 const heroImages = [
-  "/hero.jpg.png",
-  "/gartenpflege-stuttgart.jpg",
-  "/service-hausmeisterservice-stuttgart.jpg",
+  {
+    src: "/images/hero/heckenschnitt-gartenpflege-stuttgart.webp.webp",
+    alt: "Professioneller Heckenschnitt und Gartenpflege in Stuttgart durch Clean all and more.",
+  },
+  {
+    src: "/images/hero/gepflegte-hecke-gartenpflege-stuttgart.webp",
+    alt: "Sauber geschnittene Hecke nach professioneller Gartenpflege in Stuttgart.",
+  },
+  {
+    src: "/images/hero/hausmeisterservice-gepflegte-wohnanlage-stuttgart.webp",
+    alt: "Gepflegte Wohnanlage mit professionellem Hausmeisterservice und Gartenpflege in Stuttgart.",
+  },
 ];
 
 export default function Hero() {
@@ -104,8 +113,8 @@ export default function Hero() {
             className="group relative overflow-hidden rounded-[26px] shadow-2xl shadow-black/10 md:rounded-[32px]"
           >
             <img
-  src={heroImages[activeImage]}
-  alt="Clean all and more"
+  src={heroImages[activeImage].src}
+  alt={heroImages[activeImage].alt}
   className="h-[280px] w-full object-cover opacity-100 transition-opacity duration-[1800ms] ease-in-out sm:h-[320px] md:h-[520px]"
 />
 

@@ -146,8 +146,8 @@
               viewport={{ once: true, amount: 0.35 }}
             >
               <img
-                src="/service-hausmeisterservice-stuttgart.jpg"
-                alt="Hausmeisterservice in Stuttgart"
+                src="/hausmeisterservice-gepflegte-wohnanlage-stuttgart.webp"
+                alt="Hausmeisterservice in Stuttgart und Umgebung"
                 className="h-[320px] w-full rounded-[26px] border border-[#d9d2c5] object-cover shadow-xl shadow-black/5 transition duration-700 hover:scale-[1.015] md:h-[700px] md:rounded-[30px]"
               />
             </motion.div>
@@ -170,7 +170,7 @@
                 Professioneller Hausmeisterservice in Stuttgart & Umgebung. 
                 <br />
                 
-                Hinter uns ist es sauber.
+                lassName="text-[28px] Hinter uns ist es sauber.
               </h3>
 
               
