@@ -65,7 +65,7 @@ function ScrollHandler() {
         const element = document.getElementById(state.scrollTo!);
 
         if (element) {
-          const headerOffset = 120;
+          const headerOffset = state.scrollTo === "gartenpflege" ? 90 : 120;
           const targetY =
             element.getBoundingClientRect().top +
             window.scrollY -

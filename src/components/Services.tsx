@@ -94,21 +94,25 @@
         whileInView="visible"
         viewport={{ once: true, amount: 0.35 }}
         transition={{ delay: index * 0.08 }}
-        className="group rounded-[20px] border border-[#d9d2c5] bg-[#fbf8f0] p-4 transition-all duration-300 hover:-translate-y-1 hover:border-[#789873]/50 hover:shadow-lg hover:shadow-black/5 md:rounded-[22px] md:p-5"
+        className="group rounded-[24px] border border-[#d9d2c5] bg-[#fbf8f0] p-5 ..."
       >
-        <div className="mb-4 flex h-9 w-9 items-center justify-center rounded-xl bg-[#e5eee1] transition group-hover:bg-[#789873] md:h-10 md:w-10">
+        <div className="mb-4 flex items-center gap-3">
+        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#e5eee1] transition group-hover:bg-[#789873]">
           <Icon
-            size={16}
+            size={18}
             strokeWidth={1.9}
-            className="text-[#789873] transition group-hover:text-white md:size-[18px]"
-          />
-        </div>
+            className="text-[#789873] transition group-hover:text-white"
+            />
+          </div>
 
-        <h4 className="text-[17px] font-semibold text-[#111a13] md:text-[18px]">
-          {service.title}
-        </h4>
+  <h4 className="text-[18px] font-semibold tracking-[-0.02em] text-[#111a13]">
+    {service.title}
+  </h4>
+</div>
 
-        <p className="mt-3 text-[13px] leading-6 text-[#4d594d] md:text-[14px]">
+        
+
+        <p className="mt-4 text-[13px] leading-6 text-[#556055] md:text-[14px] md:leading-7">
           {service.text}
         </p>
       </motion.div>
@@ -117,7 +121,7 @@
 
   export default function Services() {
     return (
-      <section id="leistungen" className="bg-[#f8f6ee] px-5 pt-10 pb-16 md:px-8 md:pt-12 md:pb-20">
+      <section id="leistungen" className="bg-[#f8f6ee] px-8 pt-10 pb-16 md:px-8 md:pt-12 md:pb-20">
         <div className="mx-auto max-w-7xl">
           <motion.div
             variants={fadeUp}
@@ -134,7 +138,7 @@
             </h2>
           </motion.div>
 
-          <div id="hausmeisterservice" className="scroll-mt-28 mt-12 grid grid-cols-1 items-center gap-10 md:scroll-mt-32 md:mt-14 md:gap-14 lg:grid-cols-[1.05fr_0.95fr]">
+          <div className=" mt-12 grid grid-cols-1 items-center gap-10 md:scroll-mt-32 md:mt-14 md:gap-14 lg:grid-cols-[1.05fr_0.95fr]">
             <motion.div
               variants={fadeImage}
               initial="hidden"
@@ -144,7 +148,7 @@
               <img
                 src="/service-hausmeisterservice-stuttgart.jpg"
                 alt="Hausmeisterservice in Stuttgart"
-                className="h-[320px] w-full rounded-[26px] border border-[#d9d2c5] object-cover shadow-xl shadow-black/5 transition duration-700 hover:scale-[1.015] md:h-[620px] md:rounded-[30px]"
+                className="h-[320px] w-full rounded-[26px] border border-[#d9d2c5] object-cover shadow-xl shadow-black/5 transition duration-700 hover:scale-[1.015] md:h-[700px] md:rounded-[30px]"
               />
             </motion.div>
 
@@ -157,6 +161,7 @@
               <p className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-[#789873]">
                 Hausmeisterservice
               </p>
+              
 
               <h3 className="text-[28px] font-semibold leading-tight tracking-[-0.035em] text-[#111a13] md:text-[36px]">
                 Professioneller Hausmeisterservice in Stuttgart & Umgebung. 
@@ -165,7 +170,7 @@
                 Hinter uns ist es sauber.
               </h3>
 
-              <p className="mt-5 max-w-xl text-[16px] leading-7 text-[#4d594d] md:text-[18px] md:leading-8">
+              
                 <p className="mt-5 max-w-xl text-[16px] leading-7 text-[#4d594d] md:text-[18px] md:leading-8">
                Unser Hausmeisterservice in Stuttgart übernimmt die zuverlässige
                Betreuung von Wohnanlagen, Mehrfamilienhäusern und Gewerbeobjekten.
@@ -173,7 +178,7 @@
                Objektpflege erhalten Sie alle Leistungen aus einer Hand – pünktlich,
                sorgfältig und mit persönlichem Ansprechpartner.
               </p>
-              </p>
+              
 
               <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2 md:mt-8">
                 {houseServices.map((service, index) => (
@@ -183,23 +188,36 @@
             </motion.div>
           </div>
 
-          <div id="gartenpflege" className="scroll-mt-28 mt-20 grid grid-cols-1 items-center gap-10 md:scroll-mt-32 md:mt-24 md:gap-14 lg:grid-cols-[0.95fr_1.05fr]">
+{/* Trennlinie */}
+<div className="my-24 flex items-center justify-center md:my-32">
+  <div className="h-px w-full max-w-7xl bg-gradient-to-r from-transparent via-[#d8d2c4] to-transparent" />
+</div>
+
+          <div  
+              
+              className="scroll-mt-52 mt-32 grid grid-cols-1 items-center gap-12 md:scroll-mt-56 md:mt-36 md:gap-16 lg:grid-cols-[0.95fr_1.05fr]"
+              >
             <motion.div
               variants={fadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.35 }}
             >
+              <div className="scroll-mt-32"></div>
               <p className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-[#789873]">
-                Gartenpflege
-              </p>
+                  Gartenpflege
+                </p>
 
-              <h3 className="text-[28px] font-semibold leading-tight tracking-[-0.035em] text-[#111a13] md:text-[36px]">
-                Professionelle Gartenpflege in Stuttgart & Umgebung.
-                 <br />
-                 
-                Grün, das geliebt wird.
-              </h3>
+                <h3
+                  id="gartenpflege"
+                  className="text-[28px] font-semibold leading-tight tracking-[-0.035em] text-[#111a13] md:text-[36px]"
+                >
+                  Professionelle Gartenpflege in Stuttgart & Umgebung.
+                  <br />
+                  Grün, das geliebt wird.
+                </h3>
+              
+                
 
               <p className="mt-5 max-w-xl text-[16px] leading-7 text-[#4d594d] md:text-[18px] md:leading-8">
                 Wir übernehmen die professionelle Gartenpflege in Stuttgart & Umgebung für
@@ -225,7 +243,7 @@
               <img
                 src="/gartenpflege-stuttgart.jpg"
                 alt="Professionelle Gartenpflege in Stuttgart"
-                className="h-[320px] w-full rounded-[26px] border border-[#d9d2c5] object-cover shadow-xl shadow-black/5 transition duration-700 hover:scale-[1.015] md:h-[620px] md:rounded-[30px]"
+                className="h-[320px] w-full rounded-[26px] border border-[#d9d2c5] object-cover shadow-xl shadow-black/5 transition duration-700 hover:scale-[1.015] md:h-[680px] md:rounded-[30px]"
               />
             </motion.div>
           </div>
