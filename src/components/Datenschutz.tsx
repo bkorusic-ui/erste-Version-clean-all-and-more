@@ -19,18 +19,28 @@ export default function Datenschutz() {
         <div className="mt-12 space-y-10 rounded-[30px] border border-[#d9d2c5] bg-[#fbf8f0] p-6 shadow-xl shadow-black/5 md:p-10">
           <section>
             <h2 className="text-2xl font-semibold text-[#111a13]">
-              1. Verantwortlicher
+              1. Datenschutz auf einen Blick
             </h2>
             <p className="mt-4 leading-8 text-[#4d594d]">
-              Clean all and more
+              Personenbezogene Daten sind alle Daten, mit denen Sie persönlich
+              identifiziert werden können. Diese Datenschutzerklärung erläutert,
+              welche Daten wir erheben, wofür wir sie nutzen und welche Rechte
+              Sie in Bezug auf Ihre Daten haben.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-[#111a13]">
+              2. Verantwortliche Stelle
+            </h2>
+            <p className="mt-4 leading-8 text-[#4d594d]">
+              Nada Korusic
               <br />
-              Inhaberin: Nada Korusic
-              <br />
-              Möhringer Landstraße 14
+              Möhringer-Landstr. 14 A
               <br />
               70563 Stuttgart
               <br />
-              Telefon: 0172 7306716
+              Telefon: 0172 73 06 716
               <br />
               E-Mail: cleanallandmore.stuttgart@gmail.com
             </p>
@@ -38,92 +48,187 @@ export default function Datenschutz() {
 
           <section>
             <h2 className="text-2xl font-semibold text-[#111a13]">
-              2. Hosting
+              3. Hosting
             </h2>
             <p className="mt-4 leading-8 text-[#4d594d]">
-              Diese Website wird über Vercel gehostet. Beim Besuch der Website
-              können technische Zugriffsdaten wie IP-Adresse, Datum, Uhrzeit,
-              Browsertyp und aufgerufene Seiten verarbeitet werden. Diese Daten
-              dienen der sicheren und stabilen Bereitstellung der Website.
+              Diese Website wird extern gehostet. Anbieter ist Vercel Inc., 440
+              N Barranca Ave #4133, Covina, CA 91723, USA. Beim Besuch der
+              Website können technische Daten wie IP-Adresse, Browser,
+              Betriebssystem, Uhrzeit des Zugriffs und aufgerufene Seiten
+              verarbeitet werden. Die Verarbeitung erfolgt zur sicheren,
+              schnellen und effizienten Bereitstellung unseres Online-Angebots.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold text-[#111a13]">
-              3. Kontaktaufnahme
+              4. SSL- bzw. TLS-Verschlüsselung
+            </h2>
+            <p className="mt-4 leading-8 text-[#4d594d]">
+              Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw.
+              TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie
+              daran, dass die Adresszeile des Browsers mit „https://“ beginnt.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-[#111a13]">
+              5. Kontaktaufnahme
             </h2>
             <p className="mt-4 leading-8 text-[#4d594d]">
               Wenn Sie uns per Telefon oder E-Mail kontaktieren, verarbeiten wir
               die von Ihnen übermittelten Daten zur Bearbeitung Ihrer Anfrage.
-              Eine Weitergabe an Dritte erfolgt nicht ohne Ihre Einwilligung.
+              Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold text-[#111a13]">
-              4. Cookies
+              6. Cookies
             </h2>
             <p className="mt-4 leading-8 text-[#4d594d]">
-              Diese Website kann technisch notwendige Cookies verwenden. Für
-              Analyse- oder Marketingdienste wird künftig ein Cookie-Banner
-              eingesetzt, über das Besucher ihre Einwilligung verwalten können.
+              Unsere Website kann Cookies verwenden. Cookies sind kleine
+              Datenpakete, die auf Ihrem Endgerät gespeichert werden. Technisch
+              notwendige Cookies dienen der sicheren und fehlerfreien
+              Bereitstellung der Website. Analyse- oder Marketing-Cookies werden
+              nur nach Ihrer Einwilligung eingesetzt.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold text-[#111a13]">
-              5. Google Analytics
+              7. Cookie-Einwilligung
             </h2>
             <p className="mt-4 leading-8 text-[#4d594d]">
-              Google Analytics ist für diese Website geplant. Die Einbindung
-              erfolgt erst nach vorheriger Einwilligung über ein Cookie-Banner.
-              Weitere Informationen werden ergänzt, sobald der Dienst aktiv
-              eingesetzt wird.
+              Für einwilligungspflichtige Dienste wird ein Cookie-Banner
+              eingesetzt. Dort können Besucher entscheiden, welchen Diensten sie
+              zustimmen möchten. Eine erteilte Einwilligung kann jederzeit
+              widerrufen werden.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold text-[#111a13]">
-              6. YouTube und Instagram
+              8. Google Tag Manager
             </h2>
             <p className="mt-4 leading-8 text-[#4d594d]">
-              Auf dieser Website können künftig Inhalte oder Verlinkungen zu
-              YouTube und Instagram eingebunden werden. Dabei können Daten durch
-              die jeweiligen Anbieter verarbeitet werden. Genauere Angaben
-              werden ergänzt, sobald diese Dienste aktiv eingebunden sind.
+              Wir nutzen den Google Tag Manager der Google Ireland Limited,
+              Gordon House, Barrow Street, Dublin 4, Irland. Über den Google Tag
+              Manager können Website-Tags zentral verwaltet werden. Der Google
+              Tag Manager selbst erstellt keine Nutzerprofile und speichert
+              keine Analyse-Cookies. Er kann jedoch andere Dienste auslösen, wenn
+              Sie diesen zuvor über unser Cookie-Banner zugestimmt haben.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold text-[#111a13]">
-              7. Ihre Rechte
+              9. Google Analytics 4
+            </h2>
+            <p className="mt-4 leading-8 text-[#4d594d]">
+              Wir nutzen Google Analytics 4, einen Webanalysedienst der Google
+              Ireland Limited. Google Analytics hilft uns zu verstehen, wie
+              Besucher unsere Website nutzen. Dabei können Daten wie
+              Seitenaufrufe, Verweildauer, verwendete Geräte, ungefähre
+              Herkunft und Interaktionen verarbeitet werden. Die Nutzung erfolgt
+              nur nach Ihrer Einwilligung über unser Cookie-Banner.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-[#111a13]">
+              10. Microsoft Clarity
+            </h2>
+            <p className="mt-4 leading-8 text-[#4d594d]">
+              Wir nutzen Microsoft Clarity, einen Analysedienst der Microsoft
+              Corporation. Clarity kann uns helfen zu verstehen, wie Besucher mit
+              unserer Website interagieren, zum Beispiel über Heatmaps,
+              Scrollverhalten und anonyme Sitzungsaufzeichnungen. Die Nutzung
+              erfolgt nur nach Ihrer Einwilligung.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-[#111a13]">
+              11. Instagram
+            </h2>
+            <p className="mt-4 leading-8 text-[#4d594d]">
+              Auf dieser Website können Funktionen oder Verlinkungen des
+              Dienstes Instagram eingebunden sein. Anbieter ist Meta Platforms
+              Ireland Limited, Merrion Road, Dublin 4, D04 X2K5, Irland. Wenn
+              Instagram-Elemente aktiv genutzt werden, kann eine Verbindung zu
+              Servern von Instagram hergestellt werden.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-[#111a13]">
+              12. YouTube mit erweitertem Datenschutz
+            </h2>
+            <p className="mt-4 leading-8 text-[#4d594d]">
+              Diese Website kann Videos von YouTube einbinden. Anbieter ist die
+              Google Ireland Limited. Soweit möglich, verwenden wir den
+              erweiterten Datenschutzmodus. Erst beim Abspielen eines Videos
+              kann eine Verbindung zu YouTube hergestellt werden.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-[#111a13]">
+              13. Google Fonts lokal
+            </h2>
+            <p className="mt-4 leading-8 text-[#4d594d]">
+              Diese Website nutzt zur einheitlichen Darstellung Schriftarten.
+              Soweit Google Fonts verwendet werden, sind diese lokal eingebunden.
+              Eine Verbindung zu Servern von Google findet dabei nicht statt.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-[#111a13]">
+              14. Speicherdauer
+            </h2>
+            <p className="mt-4 leading-8 text-[#4d594d]">
+              Soweit in dieser Datenschutzerklärung keine speziellere
+              Speicherdauer genannt wird, verbleiben personenbezogene Daten bei
+              uns, bis der Zweck der Verarbeitung entfällt oder Sie eine
+              Löschung verlangen, sofern keine gesetzlichen Aufbewahrungspflichten
+              entgegenstehen.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-[#111a13]">
+              15. Ihre Rechte
             </h2>
             <p className="mt-4 leading-8 text-[#4d594d]">
               Sie haben das Recht auf Auskunft, Berichtigung, Löschung,
               Einschränkung der Verarbeitung, Datenübertragbarkeit sowie
               Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten.
+              Zudem können Sie eine erteilte Einwilligung jederzeit für die
+              Zukunft widerrufen.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold text-[#111a13]">
-              8. SSL-Verschlüsselung
+              16. Beschwerderecht
             </h2>
             <p className="mt-4 leading-8 text-[#4d594d]">
-              Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw.
-              TLS-Verschlüsselung. Dadurch können übermittelte Daten nicht ohne
-              Weiteres von Dritten mitgelesen werden.
+              Im Falle datenschutzrechtlicher Verstöße steht Ihnen ein
+              Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold text-[#111a13]">
-              9. Aktualität dieser Erklärung
+              17. Aktualität dieser Datenschutzerklärung
             </h2>
             <p className="mt-4 leading-8 text-[#4d594d]">
-              Diese Datenschutzerklärung ist als vorläufige Fassung angelegt und
-              sollte vor Veröffentlichung mit einem aktuellen Datenschutzgenerator
-              oder rechtlich geprüftem Text abgeglichen werden.
+              Diese Datenschutzerklärung wurde auf Grundlage der aktuellen
+              Website-Funktionen erstellt und sollte aktualisiert werden, sobald
+              neue Analyse-, Marketing- oder Drittanbieter-Dienste eingebunden
+              werden.
             </p>
           </section>
         </div>

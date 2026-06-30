@@ -13,6 +13,7 @@ export default function Header() {
   navigate("/", {
     state: {
       scrollTo: id,
+      time: Date.now(),
     },
   });
 };

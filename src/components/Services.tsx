@@ -174,7 +174,7 @@
               </h3>
 
               
-                <p className="mt-5 max-w-xl text-[16px] leading-7 text-[#4d594d] md:text-[18px] md:leading-8">
+                <p className="mt-5 max-w-xl text-[14px] leading-7 text-[#4d594d] md:text-[18px] md:leading-8">
                Unser Hausmeisterservice in Stuttgart übernimmt die zuverlässige
                Betreuung von Wohnanlagen, Mehrfamilienhäusern und Gewerbeobjekten.
                Von der Treppenhausreinigung über Kleinreparaturen bis zur laufenden
@@ -222,7 +222,7 @@
               
                 
 
-              <p className="mt-5 max-w-xl text-[16px] leading-7 text-[#4d594d] md:text-[18px] md:leading-8">
+              <p className="mt-5 max-w-xl text-[14px] leading-7 text-[#4d594d] md:text-[18px] md:leading-8">
                 Wir übernehmen die professionelle Gartenpflege in Stuttgart & Umgebung für
                 Privatgärten, Wohnanlagen und Unternehmen. Ob Rasenpflege,
                 Heckenschnitt, Beetpflege oder saisonale Arbeiten – wir sorgen dafür,

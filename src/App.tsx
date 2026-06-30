@@ -73,7 +73,7 @@ function ScrollHandler() {
               break;
 
             case "gartenpflege":
-              headerOffset = 100;
+              headerOffset = 130;
               break;
 
             default:
