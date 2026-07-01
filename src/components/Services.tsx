@@ -246,7 +246,7 @@
               viewport={{ once: true, amount: 0.35 }}
             >
               <img
-                src="/gartenpflege-stuttgart.jpg"
+                src="/images/references/rasenpflege-gartenpflege-stuttgart-1.webp"
                 alt="Professionelle Gartenpflege in Stuttgart"
                 className="h-[320px] w-full rounded-[26px] border border-[#d9d2c5] object-cover shadow-xl shadow-black/5 transition duration-700 hover:scale-[1.015] md:h-[680px] md:rounded-[30px]"
               />
