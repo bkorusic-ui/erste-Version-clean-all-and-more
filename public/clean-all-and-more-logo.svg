@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Clean all and more Haus Blatt Logo</title>
+  <desc id="desc">Minimalistisches grünes Linienlogo mit Hausumriss und Blatt in der Mitte.</desc>
+
+  <g fill="none" stroke="#789873" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Dach außen -->
+    <path d="M88 220 L256 78 L424 220" />
+
+    <!-- Hauskörper mit innerem Dach -->
+    <path d="M126 216 L256 106 L386 216" />
+    <path d="M126 216 V394 Q126 420 152 420 H360 Q386 420 386 394 V216" />
+
+    <!-- Blatt außen -->
+    <path d="M256 382
+             C176 322 196 212 316 166
+             C354 246 326 344 256 382 Z" />
+
+    <!-- Blattader -->
+    <path d="M256 382
+             C264 312 294 260 326 216" />
+
+    <!-- Stiel -->
+    <path d="M256 382 V420" />
+  </g>
+</svg>

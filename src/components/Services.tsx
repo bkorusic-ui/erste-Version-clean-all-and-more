@@ -170,7 +170,9 @@
                 Professioneller Hausmeisterservice in Stuttgart & Umgebung. 
                 <br />
                 
-                lassName="text-[28px] Hinter uns ist es sauber.
+                <span className="text-[24px] font-medium text-[#111a13]">
+                  Hinter uns ist es sauber.
+                </span>
               </h3>
 
               

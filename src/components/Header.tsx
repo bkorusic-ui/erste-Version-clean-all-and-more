@@ -21,6 +21,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-[#e5dfd3]/80 bg-[#f8f6ef]/90">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 md:h-24 md:px-8">
         <Link to="/" className="flex items-center">
+          
           <img
             src="/public:logo.png"
             alt="Clean All and More"
