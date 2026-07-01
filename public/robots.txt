@@ -1,4 +1,5 @@
 User-agent: *
+
 Allow: /
 
-Sitemap: https://erste-version-clean-all-and-more.vercel.app/sitemap.xml
+Sitemap: https://www.cleanallandmore.de/sitemap.xml
