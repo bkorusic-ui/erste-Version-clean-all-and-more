@@ -36,6 +36,10 @@ const heroImages = [
     src: "/images/hero/hausmeisterservice-gepflegte-wohnanlage-stuttgart.webp",
     alt: "Gepflegte Wohnanlage mit professionellem Hausmeisterservice und Gartenpflege in Stuttgart.",
   },
+  {
+    src: "/images/hero/hausmeisterservice-wohnanlage-stuttgart-1.webp",
+    alt: "Gepflegte Wohnanlage mit professionellem Hausmeisterservice und Gartenpflege in Stuttgart.",
+  },
 ];
 
 export default function Hero() {

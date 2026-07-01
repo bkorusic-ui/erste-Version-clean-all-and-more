@@ -1,6 +1,9 @@
 {
   "name": "Clean all and more",
-  "short_name": "Clean all",
+  "short_name": "Clean",
+  "theme_color": "#789873",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -12,8 +15,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "theme_color": "#789873",
-  "background_color": "#f8f6ef",
-  "display": "standalone"
+  ]
 }
