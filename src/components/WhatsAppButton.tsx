@@ -7,8 +7,7 @@ export default function WhatsAppButton() {
                    target="_blank"
                     rel="noopener noreferrer"
                     aria-label="WhatsApp Kontakt"
-      className="group fixed bottom-6 right-6 z-[9999] flex items-center gap-3 rounded-full bg-[#789873]/25 px-4 py-3 text-white opacity-40 shadow-lg shadow-[#789873]/10 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-[#789873] hover:opacity-100 hover:shadow-2xl hover:shadow-[#789873]/30 md:bottom-8 md:right-8"
-    >
+      className="group fixed bottom-6 right-6 z-[9999] flex scale-95 items-center gap-3 rounded-full bg-[#789873]/30 px-4 py-3 text-white opacity-55 shadow-md shadow-[#789873]/20 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:scale-100 hover:bg-[#789873] hover:opacity-100 hover:shadow-2xl hover:shadow-[#789873]/30 md:bottom-8 md:right-8">
       <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/15">
         <svg
           viewBox="0 0 32 32"
