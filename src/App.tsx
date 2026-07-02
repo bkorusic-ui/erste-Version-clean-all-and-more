@@ -1,3 +1,4 @@
+import WhatsAppButton from "./components/WhatsAppButton";
 import { useEffect } from "react";
 import {
   BrowserRouter,
@@ -110,7 +111,7 @@ export default function App() {
         <Route path="/impressum" element={<Impressum />} />
         <Route path="/datenschutz" element={<Datenschutz />} />
       </Routes>
-
+      <WhatsAppButton />
       <Footer />
     </BrowserRouter>
   );
