@@ -34,11 +34,11 @@ const heroImages = [
   },
   {
     src: "/images/hero/hausmeisterservice-gepflegte-wohnanlage-stuttgart.webp",
-    alt: "Gepflegte Wohnanlage mit professionellem Hausmeisterservice und Gartenpflege in Stuttgart.",
+    alt: "Gepflegte Wohnanlage mit Hausmeisterservice und Gartenpflege in Stuttgart.",
   },
   {
     src: "/images/hero/hausmeisterservice-wohnanlage-stuttgart-1.webp",
-    alt: "Gepflegte Wohnanlage mit professionellem Hausmeisterservice und Gartenpflege in Stuttgart.",
+    alt: "Wohnanlage in Stuttgart mit zuverlässigem Hausmeisterservice.",
   },
 ];
 
@@ -70,42 +70,40 @@ export default function Hero() {
     <section className="bg-[#f8f6ee]">
       <div className="mx-auto grid min-h-[calc(100vh-80px)] max-w-7xl grid-cols-1 items-start gap-10 px-5 pt-6 pb-12 md:min-h-[calc(100vh-96px)] md:grid-cols-2 md:items-center md:gap-16 md:px-8 md:pt-8 md:pb-16">
         <motion.div variants={fadeUp} initial="hidden" animate="visible">
-          <div className="inline-flex items-center gap-2 rounded-full border border-[#d8d2c4] bg-white/30 px-4 py-2 text-[11px] font-medium uppercase tracking-[0.22em] text-[#6f8d67] md:text-sm">
-            <span className="h-2 w-2 rounded-full bg-[#789873]" />
-            Stuttgart & Umgebung
-          </div>
+          <div className="inline-flex items-center gap-2 rounded-full border border-[#d8d2c4] bg-white/30 px-4 py-2 text-[10px] font-medium uppercase tracking-[0.16em] text-[#6f8d67] md:text-[11px]">
+              <span className="h-2 w-2 rounded-full bg-[#789873]" />
+              Hausmeisterservice &amp; Gartenpflege in Stuttgart &amp; Umgebung
+            </div>
 
-          <h1 className="mt-6 text-[40px] font-semibold leading-[0.98] tracking-[-0.055em] text-[#111a13] sm:text-[52px] md:mt-8 md:text-[72px]">
+          <h1 className="mt-6 text-4xl font-semibold leading-tight text-[#111a13] sm:text-5xl lg:text-6xl">
             Gepflegte
-            <br />
-            Häuser.
-            <br />
+            Immobilien.
+      
             <span className="text-[#7f9a77]">
+          <br />
               Lebendige
-              <br />
               Gärten.
             </span>
           </h1>
 
-          <p className="mt-6 max-w-xl text-[16px] leading-7 text-[#556055] md:mt-8 md:text-xl md:leading-9">
-            Wir kümmern uns um Ihr Objekt – vom regelmäßigen Hausmeisterdienst
-            bis zur professionellen Gartenpflege. Zuverlässig, gründlich und mit
-            einem Auge fürs Detail.
+          <p className="mt-6 max-w-xl text-[14px] leading-7 text-[#556055] md:mt-8 md:text-xl md:leading-9">
+           Clean all and more ist Ihr zuverlässiger Partner für Hausmeisterservice, Gebäudereinigung und Gartenpflege in Stuttgart und Umgebung.
+            Wir betreuen Wohnanlagen, Gewerbeobjekte und Privatimmobilien – professionell, flexibel und mit höchsten Qualitätsansprüchen.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row md:mt-10 md:gap-5">
             <a
               href="#kontakt"
-              className="rounded-full bg-[#789873] px-6 py-3 text-center text-[15px] font-semibold text-white shadow-lg shadow-[#789873]/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#6f8d67] hover:shadow-xl md:px-9 md:py-4 md:text-lg"
+              className="rounded-full bg-[#789873] px-5 py-2.5 text-center text-[11px] font-medium text-white shadow-md shadow-[#789873]/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#6f8d67] hover:shadow-lg md:px-6 md:py-3 md:text-[15px]"
             >
-              Kostenloses Angebot →
+              Kostenloses Angebot anfragen 
             </a>
 
             <a
               href="#leistungen"
-              className="rounded-full border border-[#d8d2c4] bg-[#f8f6ee] px-6 py-3 text-center text-[15px] font-semibold text-[#111a13] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#789873]/50 hover:bg-white md:px-9 md:py-4 md:text-lg"
+              className="rounded-full border border-[#d8d2c4] bg-[#f8f6ee] px-4 py-2 text-center text-[10px] font-semibold text-[#111a13] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#789873]/50 hover:bg-white md:px-6 md:py-3 md:text-base"
             >
-              Leistungen ansehen
+              Unsere Leistungen ansehen
             </a>
           </div>
         </motion.div>
@@ -117,38 +115,49 @@ export default function Hero() {
             className="group relative overflow-hidden rounded-[26px] shadow-2xl shadow-black/10 md:rounded-[32px]"
           >
             <img
-  src={heroImages[activeImage].src}
-  alt={heroImages[activeImage].alt}
-  className="h-[280px] w-full object-cover opacity-100 transition-opacity duration-[1800ms] ease-in-out sm:h-[320px] md:h-[520px]"
-/>
+              src={heroImages[activeImage].src}
+              alt={heroImages[activeImage].alt}
+              width="720"
+              height="520"
+              fetchPriority="high"
+              loading="eager"
+              decoding="async"
+              className="h-[280px] w-full object-cover opacity-100 transition-opacity duration-[1800ms] ease-in-out sm:h-[320px] md:h-[520px]"
+            />
 
-<button
-  onClick={prevImage}
-  className="absolute left-4 top-1/2 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-[#f8f6ef]/90 text-2xl text-[#111a13] opacity-0 transition-all duration-300 group-hover:opacity-100 md:flex"
->
-  ‹
-</button>
+            <button
+              type="button"
+              onClick={prevImage}
+              aria-label="Vorheriges Bild anzeigen"
+              className="absolute left-4 top-1/2 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-[#f8f6ef]/90 text-2xl text-[#111a13] opacity-0 transition-all duration-300 group-hover:opacity-100 md:flex"
+            >
+              ‹
+            </button>
 
-<button
-  onClick={nextImage}
-  className="absolute right-4 top-1/2 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-[#f8f6ef]/90 text-2xl text-[#111a13] opacity-0 transition-all duration-300 group-hover:opacity-100 md:flex"
->
-  ›
-</button>
+            <button
+              type="button"
+              onClick={nextImage}
+              aria-label="Nächstes Bild anzeigen"
+              className="absolute right-4 top-1/2 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-[#f8f6ef]/90 text-2xl text-[#111a13] opacity-0 transition-all duration-300 group-hover:opacity-100 md:flex"
+            >
+              ›
+            </button>
 
-<div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
-  {heroImages.map((_, index) => (
-    <button
-      key={index}
-      onClick={() => setActiveImage(index)}
-      className={`h-2 rounded-full transition-all duration-500 ${
-        activeImage === index
-          ? "w-7 bg-white/90"
-          : "w-2 bg-white/45 hover:bg-white/70"
-      }`}
-    />
-  ))}
-</div>
+            <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
+              {heroImages.map((image, index) => (
+                <button
+                  key={image.src}
+                  type="button"
+                  onClick={() => setActiveImage(index)}
+                  aria-label={`Bild ${index + 1} anzeigen`}
+                  className={`h-2 rounded-full transition-all duration-500 ${
+                    activeImage === index
+                      ? "w-7 bg-white/90"
+                      : "w-2 bg-white/45 hover:bg-white/70"
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>
@@ -162,9 +171,9 @@ export default function Hero() {
           className="mx-auto grid max-w-7xl grid-cols-1 gap-5 px-5 py-6 sm:grid-cols-3 md:px-8 md:py-14"
         >
           {[
-            ["Erfahrung", "10+ J."],
-            ["Objekte", "21+"],
-            ["Region", "Stuttgart"],
+            ["Erfahrung", "10+ Jahre"],
+            ["Betreute Objekte", "21+"],
+            ["Einsatzgebiet", "Stuttgart"],
           ].map(([label, value]) => (
             <div key={label}>
               <p className="text-[11px] uppercase tracking-[0.22em] text-[#556055] md:text-sm">

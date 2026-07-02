@@ -185,7 +185,7 @@
               </p>
               
 
-              <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2 md:mt-8">
+              <div className="mt-5 grid grid-cols-1 gap-2 sm:grid-cols-2 md:mt-6">
                 {houseServices.map((service, index) => (
                   <ServiceCard key={service.title} service={service} index={index} />
                 ))}
@@ -232,7 +232,7 @@
                 wirken.
               </p>
 
-              <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2 md:mt-8">
+              <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 md:mt-4">
                 {gardenServices.map((service, index) => (
                   <ServiceCard key={service.title} service={service} index={index} />
                 ))}
