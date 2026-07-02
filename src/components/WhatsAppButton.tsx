@@ -3,10 +3,10 @@
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/491727306716?text=Hallo%20Clean%20all%20and%20more,%20ich%20interessiere%20mich%20für%20Ihre%20Dienstleistungen."
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="WhatsApp Kontakt"
+        href="https://wa.me/491727306716?text=Hallo%20Clean%20all%20and%20more,%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Dienstleistungen%20und%20h%C3%A4tte%20gerne%20ein%20unverbindliches%20Angebot."
+                   target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp Kontakt"
       className="group fixed bottom-6 right-6 z-[9999] flex items-center gap-3 rounded-full bg-[#789873]/25 px-4 py-3 text-white opacity-40 shadow-lg shadow-[#789873]/10 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-[#789873] hover:opacity-100 hover:shadow-2xl hover:shadow-[#789873]/30 md:bottom-8 md:right-8"
     >
       <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/15">
